@@ -1,0 +1,19 @@
+{
+  "name": "express-auth-template",
+  "version": "1.0.0",
+  "description": "Starter template for local authentication with passport, express, mongodb and node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/godcrampy/express-local-auth-template.git"
+  },
+  "author": "Sahil Bondre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/godcrampy/express-local-auth-template/issues"
+  },
+  "homepage": "https://github.com/godcrampy/express-local-auth-template#readme"
+}
