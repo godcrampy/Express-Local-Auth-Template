@@ -1,0 +1,44 @@
+<%- include('components/header') %>
+<div class="columns login-hero">
+  <div class="column is-1 level flat">
+  </div>
+  <div class="column is-5 level">
+    <h1 class="title is-1 login-hero-title">Welcome Back</h1>
+    <h2 class="subtitle is-3">Subtitle</h2>
+  </div>
+  <div class="column login-form">
+    <div class="container">
+      <form action="/login" method="post">
+        <div class="field">
+          <label class="label">Username</label>
+          <div class="control">
+            <input class="input" name="username" type="text" placeholder="">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Password</label>
+          <div class="control">
+            <input class="input" name="password" type="password" placeholder="">
+          </div>
+          <a class="help">Forgot Password?</a>
+        </div>
+        <% if (message.length > 0) { %>
+        <div><%= message %></div>
+        <% } %>
+
+        <div class="field is-grouped">
+          <div class="control">
+            <input id="submit-button" value="Login" type="submit" class="button is-link"></input>
+          </div>
+          <div class="control">
+            <button class="button">Cancel</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="column is-1 level">
+  </div>
+</div>
+
+<%- include('components/footer') %>

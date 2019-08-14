@@ -1,0 +1,28 @@
+.login-hero {
+  padding: 1em 2em;
+}
+
+.login-form {
+  margin: 5em 2.5em;
+}
+
+.flat {
+  margin: 0;
+  padding: 0;
+}
+
+.login-hero-title {
+  padding-top: 3em;
+}
+
+@media (max-width: 768px) {
+  .login-hero {
+    padding: 0em 2em;
+  }
+  .login-hero-title {
+    padding-top: 0em !important;
+  }
+  .login-form {
+    margin: 0em 0.2em;
+  }
+}

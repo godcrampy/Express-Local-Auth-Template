@@ -1,0 +1,22 @@
+<%- include('components/header') %>
+<div class="container">
+  <div class="card">
+    <div class="card-content">
+      <div class="media">
+        <div class="media-left">
+        </div>
+        <div class="media-content">
+          <p class="title is-4"><%= profile.name %></p>
+          <p class="subtitle is-6"><%= profile.username %></p>
+        </div>
+      </div>
+    </div>
+    <% if(isRoot){ %>
+    <!-- Place logic for editing profile here -->
+    <a class="button is-light">Edit Profile</a>
+    <% } %>
+  </div>
+</div>
+
+
+<%- include('components/footer') %>

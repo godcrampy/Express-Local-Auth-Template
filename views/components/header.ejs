@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Auth Template</title>
+</head>
+
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <h2 class="title">
+            <span style="color: #723881;">Brand</span>
+          </h2>
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+          data-target="navbar-ham-menu" id="navbar-ham">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbar-ham-menu" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Home
+          </a>
+
+          <a class="navbar-item">
+            Another Page
+          </a>
+          <a class="navbar-item">
+            About
+          </a>
+        </div>
+        <div class="navbar-end">
+          <% if(!isAuth){ %>
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-info" style="background-color: #723881" href="/signup">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-light" href="/login">
+                Log in
+              </a>
+            </div>
+          </div>
+          <% } else {%>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              <%= user.name %>
+            </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="/profile">
+                Profile
+              </a>
+              <a class="navbar-item" href="/logout">
+                Logout
+              </a>
+            </div>
+          </div>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </nav>

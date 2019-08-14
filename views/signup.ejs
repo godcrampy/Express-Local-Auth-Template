@@ -1,0 +1,75 @@
+<%- include('components/header') %>
+<div class="columns login-hero">
+  <div class="column is-1 level flat">
+  </div>
+  <div class="column is-5 level">
+    <h1 class="title is-1 login-hero-title">Join Brand</h1>
+    <h2 class="subtitle is-3">Subtitle</h2>
+  </div>
+  <div class="column login-form">
+    <form action="/signup" method="post" id="form">
+      <div class="container">
+        <div class="field">
+          <label class="label">First Name</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="What shall we call you?" name="name" id="form-name">
+          </div>
+          <p class="help" id="form-name-help" hidden="true"></p>
+        </div>
+
+        <div class="field">
+          <label class="label">Username</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="A unique username" name="username" id="form-username">
+          </div>
+          <p class="help" id="form-username-help" hidden></p>
+        </div>
+
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input class="input" name="email" type="email" placeholder="Your most relevant email" id="form-email">
+          </div>
+          <p class="help" id="form-email-help" hidden></p>
+        </div>
+        <div class="field">
+          <label class="label">Password</label>
+          <div class="control">
+            <input class="input" name="password" type="password" placeholder="8+ charecters with atleast one number and memorable"
+              id="form-password">
+          </div>
+          <p class="help" id="form-password-help" hidden></p>
+        </div>
+        <div class="field">
+          <label class="label">Re-Enter Password</label>
+          <div class="control">
+            <input class="input" type="password" placeholder="Just to ensure you didn't make a typo!"
+              id="form-repassword">
+          </div>
+          <p class="help" id="form-repassword-help" hidden></p>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox">
+              I agree to the <a href="#">terms and conditions</a>
+            </label>
+          </div>
+        </div>
+        <div class="field is-grouped">
+          <div class="control">
+            <input id="submit-button" value="Submit" type="submit" class="button is-link" disabled></input>
+          </div>
+          <div class="control">
+            <button class="button">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="column is-1 level">
+  </div>
+</div>
+<script src="/js/bundle-signup.js"></script>
+<%- include('components/footer') %>
