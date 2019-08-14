@@ -86,4 +86,4 @@ The following components can be replaced with your favorite ones by making minim
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/godcrampy/express-local-auth-template/blob/master/LICENSE) file for details
