@@ -72,12 +72,20 @@ module.exports = (app, passport, UserModel) => {
     });
   });
 
+  // About Page
+  app.get("/about", (req, res) => {
+    res.render("about", {
+      isAuth: req.isAuthenticated(),
+      user: req.user,
+    });
+  });
+
   app.get("*", (req, res) => {
     res.render("404", {
       isAuth: req.isAuthenticated(),
       user: req.user,
     });
-  })
+  });
 };
 
 function isLoggedIn(req, res, next) {
