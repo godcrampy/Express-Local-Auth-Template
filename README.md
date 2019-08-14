@@ -1,6 +1,6 @@
 # Express Local Auth Template
 
-Starter template for local authentication with validation using passport, express, node and mongodb. The template includes eslint, webpack, node-sass, passport etc. All bundled with config files as well. Some decisions like the use of sass as preprocessor, ejs as template engine, mongoose for odm, eslint for linting have been made to reduce the initial setup time but you can use alternatives as well by changing a few lines of code.
+Starter template for local authentication with validation using passport, express, node and mongodb. The template includes eslint, webpack, node-sass, passport etc. All bundled with config files as well. Some decisions like the use of scss as preprocessor, ejs as template engine, mongoose for odm, eslint for linting have been made to reduce the initial setup time but you can use alternatives as well by changing a few lines of code.
 
 ![](https://github.com/godcrampy/Express-Local-Auth-Template/blob/master/assets/demo-ss-1.png)
 
@@ -41,7 +41,7 @@ These instructions will get you a copy of the project up and running on your loc
    All the routes for the project
 
 5. `sass`
-   Write your sass here
+   Write your sass/scss here
 
 6. `scripts`
    Write your frontend js logic here. See `webpack.config.js`
@@ -55,8 +55,8 @@ The following components can be replaced with your favorite ones by making minim
 
 1. **CSS Preprocessing:**
 
-- Current: SASS
-- Alternatives: SCSS, no preprocessor
+- Current: SCSS
+- Alternatives: SASS, no preprocessor
 
 2. **CSS Framework:**
 
