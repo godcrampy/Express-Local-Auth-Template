@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/godcrampy/express-local-auth-template#readme",
   "dependencies": {
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
     "bulma": "^0.7.5",
     "connect-flash": "^0.1.1",
